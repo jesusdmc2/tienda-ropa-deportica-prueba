@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f48c25;
+  --color-primary-light: #f27f0d;
+  --color-accent: #0df246;
+  --color-neon-green: #ccff00;
+  --color-background-light: #f8f7f5;
+  --color-background-dark: #181411;
+  --color-background-darker: #221910;
+  --color-surface-dark: #27211b;
+  --color-surface-light: #ffffff;
+  --color-card-dark: #27211b;
+
+  --font-space: var(--font-space-grotesk);
+  --font-lexend: var(--font-lexend);
+  --font-jakarta: var(--font-plus-jakarta-sans);
+  --font-noto: var(--font-noto-sans);
+}
+
+/* Custom Utilities based on design */
+@utility text-shadow {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
