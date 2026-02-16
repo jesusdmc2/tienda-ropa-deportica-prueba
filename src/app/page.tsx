@@ -30,15 +30,11 @@ export default function WelcomePage() {
         </div>
 
         <div className="flex flex-col gap-4 w-full max-w-sm mx-auto animate-fade-in-up delay-200">
-          <Link href="/register" className="w-full">
-            <button className="flex w-full items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-[#221910] text-lg font-bold leading-normal tracking-wide shadow-lg active:scale-95 transition-transform duration-100 hover:brightness-110">
-              <span className="truncate">Empezar</span>
-            </button>
+          <Link href="/register" className="flex w-full items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-[#221910] text-lg font-bold leading-normal tracking-wide shadow-lg active:scale-95 transition-transform duration-100 hover:brightness-110">
+            <span className="truncate">Empezar</span>
           </Link>
-          <Link href="/login" className="w-full">
-            <button className="flex w-full items-center justify-center overflow-hidden rounded-full h-14 px-8 border-2 border-primary text-primary text-lg font-bold leading-normal tracking-wide bg-primary/10 active:scale-95 transition-transform duration-100 hover:bg-primary/20">
-              <span className="truncate">Iniciar Sesión</span>
-            </button>
+          <Link href="/login" className="flex w-full items-center justify-center overflow-hidden rounded-full h-14 px-8 border-2 border-primary text-primary text-lg font-bold leading-normal tracking-wide bg-primary/10 active:scale-95 transition-transform duration-100 hover:bg-primary/20">
+            <span className="truncate">Iniciar Sesión</span>
           </Link>
         </div>
       </div>
