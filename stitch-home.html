@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apex Performance | Tu Mejor Versión</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6a00",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 1) 100%);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(255, 106, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased">
+<!-- Fixed Navbar -->
+<nav class="fixed top-0 w-full z-50 px-6 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between glass rounded-full px-8 py-3">
+<div class="flex items-center gap-2">
+<span class="text-primary text-3xl font-black italic tracking-tighter">APEX</span>
+<span class="text-white font-bold tracking-widest text-sm hidden sm:block">PERFORMANCE</span>
+</div>
+<div class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider">
+<a class="hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="hover:text-primary transition-colors" href="#">Programas</a>
+<a class="hover:text-primary transition-colors" href="#">Coaches</a>
+<a class="hover:text-primary transition-colors" href="#">Blog</a>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-full font-bold text-sm uppercase tracking-widest hover:scale-105 transition-transform glow-hover">
+                Prueba Gratis
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Elite Athlete Training" class="w-full h-full object-cover opacity-60" data-alt="Professional athlete training in dark gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw5W6Qwdqcerbr28WosUZGor8B5CNMdffQyKYnpsRn4IejJfZlkBwoULAEHMt-zeO9N142mKQHidPY9awwswrowoW6qLo_VB3WHcHqqpuhyCLUhR2Twgs34c9kMdTKPQ-bUfrh_sezwzmNZvV7jHg7VJsgc-nVDa9X9DuawvOEh3PvFpGLq_uuEy1esxUW2nj62br1wRYcfL0EnxJ5br03T-WrknDgA6htQcJlfuIvv6x4RrMKvlU7zOPxwQ5Fv70MxKjQuFNwUAJg"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+<h1 class="text-6xl md:text-8xl font-black italic tracking-tighter leading-tight mb-6">
+                TU MEJOR VERSIÓN <br/> <span class="text-primary">EMPIEZA AQUÍ</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Domina tu potencial con programas personalizados diseñados por expertos en alto rendimiento. Nutrición, entrenamiento y mentalidad en un solo lugar.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-lg hover:scale-105 transition-all shadow-xl shadow-primary/20">
+                    Empieza tu prueba gratis
+                </button>
+<button class="w-full sm:w-auto border-2 border-white/20 hover:border-white text-white px-10 py-5 rounded-full font-black uppercase tracking-widest text-lg transition-all backdrop-blur-sm">
+                    Ver programas
+                </button>
+</div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="relative z-20 -mt-16 px-4">
+<div class="max-w-6xl mx-auto glass rounded-lg p-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-t border-white/10 shadow-2xl">
+<div>
+<h3 class="text-4xl font-black text-primary italic">+2,500</h3>
+<p class="text-slate-400 font-semibold uppercase tracking-widest text-xs mt-2">Miembros Activos</p>
+</div>
+<div class="border-y md:border-y-0 md:border-x border-white/10 py-4 md:py-0">
+<h3 class="text-4xl font-black text-primary italic">+15,000</h3>
+<p class="text-slate-400 font-semibold uppercase tracking-widest text-xs mt-2">Transformaciones</p>
+</div>
+<div>
+<h3 class="text-4xl font-black text-primary italic">50+</h3>
+<p class="text-slate-400 font-semibold uppercase tracking-widest text-xs mt-2">Coaches Certificados</p>
+</div>
+</div>
+</section>
+<!-- Why Apex -->
+<section class="py-24 px-4 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-primary font-black uppercase tracking-widest text-sm mb-4">¿Por qué elegirnos?</h2>
+<p class="text-4xl md:text-5xl font-extrabold italic">EL ESTÁNDAR DE LA ÉLITE</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass p-10 rounded-xl hover:bg-white/5 transition-all group">
+<div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary text-3xl">fitness_center</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Planes a Medida</h3>
+<p class="text-slate-400 leading-relaxed">Entrenamientos adaptados a tu nivel, equipo disponible y objetivos específicos. No más rutinas genéricas.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass p-10 rounded-xl hover:bg-white/5 transition-all group border-primary/30">
+<div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Coaches Élite</h3>
+<p class="text-slate-400 leading-relaxed">Acceso directo a profesionales con experiencia en competición y ciencias del deporte.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass p-10 rounded-xl hover:bg-white/5 transition-all group">
+<div class="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary text-3xl">monitoring</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Resultados Reales</h3>
+<p class="text-slate-400 leading-relaxed">Seguimiento de métricas avanzado para asegurar que cada gota de sudor cuente hacia tu meta.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Programs -->
+<section class="py-24 px-4 bg-zinc-950">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+<div class="text-left">
+<h2 class="text-primary font-black uppercase tracking-widest text-sm mb-4">Nuestros Programas</h2>
+<p class="text-4xl md:text-5xl font-extrabold italic">ENCUENTRA TU DESAFÍO</p>
+</div>
+<a class="text-primary font-bold uppercase tracking-widest text-sm flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    Ver todos los programas <span class="material-icons">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Program 1 -->
+<div class="group relative overflow-hidden rounded-xl bg-background-dark">
+<div class="h-80 overflow-hidden">
+<img alt="Quema Total HIIT" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-70" data-alt="Intense high intensity interval training session" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcp_UnC4drAm5Nnn6_T6Gb-L10GQgy-cYgY1bGHmPs0FRpz7JxjqV3Dbp27zk4uwIbK7fHaJ_ck-DRBmLTYcTKYXxHytRfeWOJJGm4VVNmc-3B0WjPMTJFpNzPSQgwNa3yJypGJ074fqnLYTUFgA7oGECxDOW2Ink6O2FLBZYBArw4burNh4SlovBGAQDtC_MGBfKhVC0jDqQmtvOdczzBOgo0qhP7Z67LpWTHnIJNwBWUmndtCigM1y7EYASNmkkhFjzLWGduuNkq"/>
+</div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">8 Semanas</span>
+<span class="bg-white/10 backdrop-blur-md text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Avanzado</span>
+</div>
+<div class="p-6">
+<h4 class="text-2xl font-bold mb-2">Quema Total</h4>
+<p class="text-slate-400 text-sm mb-6">HIIT de alta intensidad diseñado para maximizar la pérdida de grasa y resistencia.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs" href="#">
+                            Ver más <span class="material-icons text-sm">add</span>
+</a>
+</div>
+</div>
+<!-- Program 2 -->
+<div class="group relative overflow-hidden rounded-xl bg-background-dark">
+<div class="h-80 overflow-hidden">
+<img alt="Fuerza Élite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-70" data-alt="Heavy weightlifting barbell back squat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrkyD-aSqPlDWnnoI8vO7h8XGi7e2M-SSG6j6X5tlXtQIFlFmlqlw_Iefmfhq3AU-KtbJmFwDkEzp3BuNqyxACHjgdBqh3s884tEUG99x1zNmvA7ADeJ5tdME7V2h20FnH6Lut9d054LtNhsXgnbRm2qHcnnUmMm1qZIaL0FYJWDsKVY6J7noPQfLtawLClbLYOXqWEX-0_6WEzJ0suDVlXHzzOmOybwR-paqgZMSy7yDG3APbXHAeAji8TcjgnbJriSvLfoatZ8b0"/>
+</div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">12 Semanas</span>
+<span class="bg-white/10 backdrop-blur-md text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Intermedio</span>
+</div>
+<div class="p-6">
+<h4 class="text-2xl font-bold mb-2">Fuerza Élite</h4>
+<p class="text-slate-400 text-sm mb-6">Enfoque en powerlifting y fuerza funcional para construir una base sólida.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs" href="#">
+                            Ver más <span class="material-icons text-sm">add</span>
+</a>
+</div>
+</div>
+<!-- Program 3 -->
+<div class="group relative overflow-hidden rounded-xl bg-background-dark">
+<div class="h-80 overflow-hidden">
+<img alt="Rendimiento Atlético" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-70" data-alt="Athlete running on track field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-a4mCI6ndbP_Iawv407oqHuTas7ktYU70wY3xCFXubyvGbzMFEq0GrjKMBGDpGZe3Zpr3grYckcwk7OW-LJquzvwp4OQcxLhPxYQqX-neHQ6rn1jORzLbxK7PGw2b6HND0C27OX5TAsJABUK5yusQGK4XcxIP_fKq5T73uBkehx2c6jbTycXXxz64bu24TJ5wF4BqHDwYV2Hpdyblo1LYrftgqhZ9-VVs5Yq1Yo7yopUh-lB__Dk8Fxh40rheoOdMobhkwCGxOTpE"/>
+</div>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="bg-primary text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Continuo</span>
+<span class="bg-white/10 backdrop-blur-md text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">Pro</span>
+</div>
+<div class="p-6">
+<h4 class="text-2xl font-bold mb-2">Rendimiento Atlético</h4>
+<p class="text-slate-400 text-sm mb-6">Entrenamiento específico para deportistas que buscan mejorar explosividad.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs" href="#">
+                            Ver más <span class="material-icons text-sm">add</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 px-4 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-primary font-black uppercase tracking-widest text-sm mb-4">Testimonios</h2>
+<p class="text-4xl md:text-5xl font-extrabold italic">COMUNIDAD APEX</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<!-- Testimonial 1 -->
+<div class="glass p-8 rounded-xl max-w-sm">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+</div>
+<p class="italic text-slate-300 mb-8 leading-relaxed">"Llevo 6 meses en Apex y mi físico ha cambiado por completo. La atención personalizada de los coaches es lo que marca la diferencia."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="User portrait" class="w-full h-full object-cover" data-alt="Satisfied female client portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8TQL_RWwiGYERhM9LByIYYEi0D4Gy9VCvuFHpKPGlaZ7wg1pB30DaDpaT7LNEvbRUd-_EaGPMYxN7tDKH8KYq_itu7ex9Wevt30-x_pBq89yNBFDZh4BBoSldhsHyVsexipJtt8Rg6gAoiZ2ayRtt5iUa9sy1P50jY37Jq-FiCijB3QvW2uNkYIlpc1vMnnc7kr1kJAhVRyySqevdv1oOP3RkG_aY2StqU3TGAGPwuapsAdL72UUQsTsV827D3hwgb8JRYJBKWEU0"/>
+</div>
+<div>
+<p class="font-bold">Carla Méndez</p>
+<p class="text-primary text-[10px] font-black uppercase">Miembro Pro</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="glass p-8 rounded-xl max-w-sm border-primary/30">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+</div>
+<p class="italic text-slate-300 mb-8 leading-relaxed">"El programa Fuerza Élite me ayudó a superar mis estancamientos en sentadilla. No podría estar más feliz con mi progreso."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="User portrait" class="w-full h-full object-cover" data-alt="Athletic male client portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpcJDPBLOTfMRA9kD-g8Y5PFaJ30ZLhOIM9yLRo4Hwr9yDHN4SVClyPY8dAS62JR-bbu53v0r8x6gAkMFLNt9pd_CzAE8AaMSPHC72wrfXSa0LsXxK9dB9XK1haXj_aXQa8ICXrDHDjQdQ_-8si7ezSezjS032hiXgH8TpW4fH7JEVy7WGcUv6t_U0b38KqJxy8IUH-2gZVO3uDnFgutnQVceCqsIcI-Ogx-hoKcuROIPqOQItjr5BqO_cXiEAIXq0i4N5KLGLMqKV"/>
+</div>
+<div>
+<p class="font-bold">Marcos Rivera</p>
+<p class="text-primary text-[10px] font-black uppercase">Atleta de Fuerza</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 px-4">
+<div class="max-w-6xl mx-auto relative rounded-lg overflow-hidden p-12 md:p-24 text-center">
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-orange-800 opacity-90 z-0"></div>
+<img alt="Gym Background" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay z-0" data-alt="Wide shot of modern fitness center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV6NTojCi-TGhgptAXURCZYno8W25sAl9nnsfG8zpT07g7R2iwLxOsXheHG3u0xKQg6uZu2kTinXQpcs0dKxPOKqA9hKAK3L_ZqvPZ5hfGd8tvjfWxf8wEtq6FmW46Mcu0JqJ1Q-xjYarzkNCU3Ex3b6GHtRsJwJuCTFfwRLmCKxbtTHLDcFq2of0pK-dc96L0GUEQ_xm0izrM8cGbfz8WbvctHRZpNdCaGwb_61rXkxxi6Wr1sy8a7loZrgVYg2v2JmikZiGlHPGr"/>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-black italic mb-8 leading-tight">¿LISTO PARA LLEGAR <br/> AL SIGUIENTE NIVEL?</h2>
+<p class="text-xl mb-12 max-w-xl mx-auto opacity-90">Únete hoy y obtén acceso ilimitado a todos nuestros planes de entrenamiento.</p>
+<button class="bg-white text-primary px-12 py-5 rounded-full font-black uppercase tracking-widest text-xl hover:bg-slate-100 transition-colors shadow-2xl">
+                    Comienza Ahora
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-zinc-950 pt-20 pb-10 px-4 border-t border-white/5">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<span class="text-primary text-3xl font-black italic tracking-tighter">APEX</span>
+<span class="text-white font-bold tracking-widest text-sm">PERFORMANCE</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">
+                        Liderando la industria del fitness con ciencia y pasión por el alto rendimiento.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Compañía</h4>
+<ul class="text-slate-500 text-sm space-y-4">
+<li><a class="hover:text-primary transition-colors" href="#">Sobre Nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Carreras</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Prensa</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Soporte</h4>
+<ul class="text-slate-500 text-sm space-y-4">
+<li><a class="hover:text-primary transition-colors" href="#">Preguntas Frecuentes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Política de Privacidad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Newsletter</h4>
+<form class="flex gap-2">
+<input class="bg-white/5 border-none rounded-full px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary" placeholder="Tu email" type="email"/>
+<button class="bg-primary p-2 rounded-full flex items-center justify-center">
+<span class="material-icons text-sm text-white">send</span>
+</button>
+</form>
+<div class="flex gap-4 mt-6">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-icons">facebook</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-icons text-xl">camera_alt</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-icons">play_circle</span></a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/5 pt-10 text-center text-slate-600 text-[10px] uppercase tracking-widest font-bold">
+                © 2024 APEX PERFORMANCE. Todos los derechos reservados.
+            </div>
+</div>
+</footer>
+</body></html>

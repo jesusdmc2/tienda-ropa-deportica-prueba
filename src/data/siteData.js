@@ -1,0 +1,325 @@
+// Site-wide data for Apex Performance
+export const programs = [
+    {
+        id: 'quema-total',
+        name: 'Quema Total',
+        duration: '8 semanas',
+        level: 'Principiante - Intermedio',
+        focus: 'Pérdida de grasa y tonificación',
+        sessions: '4 sesiones/semana',
+        sessionLength: '50 min/sesión',
+        description: 'Programa intensivo diseñado para maximizar la quema de grasa con una combinación de HIIT, entrenamiento de fuerza y cardio estratégico.',
+        methodology: 'Periodización ondulante con enfoque en déficit calórico controlado y preservación muscular.',
+        testimonial: {
+            quote: 'Perdí 12 kg en 4 meses. El seguimiento personalizado hizo toda la diferencia.',
+            name: 'María G.',
+            age: 34,
+        },
+        includes: ['Acceso a app', 'Plan nutricional', 'Seguimiento semanal', 'Ajustes quincenales'],
+    },
+    {
+        id: 'fuerza-elite',
+        name: 'Fuerza Élite',
+        duration: '12 semanas',
+        level: 'Intermedio - Avanzado',
+        focus: 'Hipertrofia y fuerza máxima',
+        sessions: '5 sesiones/semana',
+        sessionLength: '60 min/sesión',
+        description: 'Para quienes buscan llevar su fuerza al siguiente nivel con programación avanzada de hipertrofia y periodización de cargas.',
+        methodology: 'Periodización lineal ondulante con énfasis en sobrecarga progresiva y técnicas de intensificación.',
+        testimonial: {
+            quote: 'Gané 8 kg de masa muscular limpia. El programa es brutal pero los resultados son reales.',
+            name: 'Jorge M.',
+            age: 40,
+        },
+        includes: ['Acceso a app', 'Plan nutricional avanzado', 'Coach semi-privado', 'Evaluación mensual'],
+    },
+    {
+        id: 'rendimiento-atletico',
+        name: 'Rendimiento Atlético',
+        duration: '10 semanas',
+        level: 'Avanzado',
+        focus: 'Atletas y deportistas',
+        sessions: '5 sesiones/semana',
+        sessionLength: '75 min/sesión',
+        description: 'Programa de alto rendimiento para atletas que buscan mejorar velocidad, potencia, agilidad y resistencia específica del deporte.',
+        methodology: 'Periodización por bloques con fases de acumulación, transmutación y realización.',
+        testimonial: {
+            quote: 'Mejoré mi tiempo en un 15%. La programación es de otro nivel.',
+            name: 'Luis R.',
+            age: 38,
+        },
+        includes: ['Acceso a app', 'Nutrición deportiva', 'Coach 1:1', 'Evaluación quincenal'],
+    },
+    {
+        id: 'flex-core',
+        name: 'Flex & Core',
+        duration: '6 semanas',
+        level: 'Todos los niveles',
+        focus: 'Movilidad, postura y core',
+        sessions: '3 sesiones/semana',
+        sessionLength: '40 min/sesión',
+        description: 'Mejora tu movilidad, corrige tu postura y fortalece tu core con un programa que combina yoga, pilates y entrenamiento funcional.',
+        methodology: 'Enfoque progresivo en rangos de movimiento, estabilización y control motor.',
+        testimonial: {
+            quote: 'Eliminé el dolor de espalda crónico que tenía hace años. Este programa cambió mi vida.',
+            name: 'Andrea P.',
+            age: 27,
+        },
+        includes: ['Acceso a app', 'Guía nutricional', 'Sesiones grabadas', 'Evaluación postural'],
+    },
+    {
+        id: 'primer-paso',
+        name: 'Primer Paso',
+        duration: '4 semanas',
+        level: 'Principiante',
+        focus: 'Para quienes inician desde cero',
+        sessions: '3 sesiones/semana',
+        sessionLength: '30 min/sesión',
+        description: 'El programa perfecto para empezar tu viaje fitness. Sin intimidación, sin jerga complicada — solo resultados paso a paso.',
+        methodology: 'Progresión gradual con énfasis en la técnica correcta y creación de hábitos sostenibles.',
+        testimonial: {
+            quote: 'De sedentaria a correr 5K en 2 meses. Nunca pensé que lo lograría.',
+            name: 'Camila S.',
+            age: 25,
+        },
+        includes: ['Acceso a app', 'Plan nutricional básico', 'Coach grupal', 'Seguimiento mensual'],
+    },
+];
+
+export const coaches = [
+    {
+        id: 'carlos',
+        name: 'Carlos Mendoza',
+        specialty: 'Fuerza & Hipertrofia',
+        certifications: ['NSCA-CSCS', 'Precision Nutrition L1'],
+        experience: 8,
+        philosophy: 'La constancia supera al talento. Mi trabajo es que no te rindas.',
+        image: 'https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&h=400&fit=crop&crop=face',
+    },
+    {
+        id: 'ana',
+        name: 'Ana Lucía Rivera',
+        specialty: 'Pérdida de grasa & Acondicionamiento',
+        certifications: ['ACE-CPT', 'TRX Certified'],
+        experience: 6,
+        philosophy: 'Tu cuerpo cambia cuando tu mente decide. Yo te ayudo con ambos.',
+        image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=400&fit=crop&crop=face',
+    },
+    {
+        id: 'diego',
+        name: 'Diego Sánchez',
+        specialty: 'Rendimiento Deportivo',
+        certifications: ['CSCS', 'USAW-L2'],
+        experience: 10,
+        philosophy: 'Cada sesión te acerca a tu mejor marca personal. Sin excusas.',
+        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=400&fit=crop&crop=face',
+    },
+    {
+        id: 'valentina',
+        name: 'Valentina Torres',
+        specialty: 'Movilidad, Yoga & Recuperación',
+        certifications: ['RYT-500', 'FMS Certified'],
+        experience: 5,
+        philosophy: 'La fuerza empieza con la flexibilidad. Muévete bien, muévete siempre.',
+        image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=400&fit=crop&crop=face',
+    },
+    {
+        id: 'marcos',
+        name: 'Marcos Delgado',
+        specialty: 'Nutrición Deportiva',
+        certifications: ['Precision Nutrition L2', 'ISSN-CISSN'],
+        experience: 7,
+        philosophy: 'Comer bien es entrenar inteligente. La nutrición es tu arma secreta.',
+        image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=400&fit=crop&crop=face',
+    },
+    {
+        id: 'sofia',
+        name: 'Sofía Estrada',
+        specialty: 'Entrenamiento Funcional & CrossTraining',
+        certifications: ['CF-L3', 'Kettlebell Certified'],
+        experience: 6,
+        philosophy: 'Entrena para vivir, no solo para verte bien. Funcionalidad es libertad.',
+        image: 'https://images.unsplash.com/photo-1550345332-09e3ac987658?w=400&h=400&fit=crop&crop=face',
+    },
+];
+
+export const mealPlan = [
+    { time: '7:00 AM', meal: 'Desayuno', description: 'Avena con proteína, banana y nueces', calories: 450, icon: '🌅' },
+    { time: '10:00 AM', meal: 'Snack AM', description: 'Yogur griego con frutos rojos', calories: 180, icon: '🫐' },
+    { time: '1:00 PM', meal: 'Almuerzo', description: 'Pollo a la plancha, arroz integral, ensalada', calories: 550, icon: '🥗' },
+    { time: '4:00 PM', meal: 'Snack PM', description: 'Batido de proteína + manzana', calories: 250, icon: '🍎' },
+    { time: '7:30 PM', meal: 'Cena', description: 'Salmón al horno con vegetales asados', calories: 480, icon: '🐟' },
+];
+
+export const transformations = [
+    {
+        name: 'Ricardo',
+        age: 31,
+        program: 'Quema Total + Nutrición',
+        duration: '16 semanas',
+        result: '-14 kg grasa, +3 kg músculo',
+        quote: 'El seguimiento personalizado hizo que cada semana contara. Los resultados hablan solos.',
+    },
+    {
+        name: 'María G.',
+        age: 34,
+        program: 'Quema Total',
+        duration: '4 meses',
+        result: '-12 kg en total',
+        quote: 'Bajé 12 kg con el plan personalizado. Los coaches hacen la diferencia.',
+    },
+    {
+        name: 'Andrea',
+        age: 27,
+        program: 'Flex & Core',
+        duration: '6 semanas',
+        result: 'Sin dolor de espalda',
+        quote: 'Eliminé el dolor de espalda crónico. Este programa cambió mi calidad de vida.',
+    },
+    {
+        name: 'Jorge',
+        age: 40,
+        program: 'Fuerza Élite',
+        duration: '12 semanas',
+        result: '+8 kg masa muscular',
+        quote: 'A mis 40 estoy en la mejor forma de mi vida. Nunca es tarde para empezar.',
+    },
+    {
+        name: 'Camila',
+        age: 25,
+        program: 'Primer Paso + Nutrición',
+        duration: '8 semanas',
+        result: 'De sedentaria a 5K',
+        quote: 'De no hacer nada a correr 5K. El programa Primer Paso es increíble para principiantes.',
+    },
+    {
+        name: 'Luis',
+        age: 38,
+        program: 'Rendimiento Atlético',
+        duration: '10 semanas',
+        result: '+15% en rendimiento',
+        quote: 'Mejoré mi tiempo en competencia. La programación de alto rendimiento es de otro nivel.',
+    },
+];
+
+export const pricingPlans = [
+    {
+        name: 'Starter',
+        monthlyPrice: 49,
+        quarterlyPrice: 129,
+        quarterlySavings: '12%',
+        popular: false,
+        features: [
+            { name: 'Sesiones de entrenamiento', value: '3/semana' },
+            { name: 'Plan nutricional', value: 'Básico' },
+            { name: 'Coach asignado', value: 'Grupal' },
+            { name: 'Seguimiento de progreso', value: 'Mensual' },
+            { name: 'Acceso a app', value: true },
+            { name: 'Ajustes de programa', value: 'Mensual' },
+            { name: 'Evaluación corporal', value: 'Inicial' },
+            { name: 'Soporte por WhatsApp', value: false },
+            { name: 'Comunidad VIP', value: false },
+            { name: 'Sesión de recuperación', value: false },
+        ],
+        cta: 'Empezar',
+    },
+    {
+        name: 'Pro',
+        monthlyPrice: 89,
+        quarterlyPrice: 239,
+        quarterlySavings: '10%',
+        popular: true,
+        features: [
+            { name: 'Sesiones de entrenamiento', value: '5/semana' },
+            { name: 'Plan nutricional', value: 'Personalizado' },
+            { name: 'Coach asignado', value: 'Semi-privado (4 pers)' },
+            { name: 'Seguimiento de progreso', value: 'Quincenal' },
+            { name: 'Acceso a app', value: true },
+            { name: 'Ajustes de programa', value: 'Quincenal' },
+            { name: 'Evaluación corporal', value: 'Mensual' },
+            { name: 'Soporte por WhatsApp', value: 'Horario laboral' },
+            { name: 'Comunidad VIP', value: true },
+            { name: 'Sesión de recuperación', value: '1/semana' },
+        ],
+        cta: 'Elegir Pro',
+    },
+    {
+        name: 'Élite',
+        monthlyPrice: 149,
+        quarterlyPrice: 399,
+        quarterlySavings: '11%',
+        popular: false,
+        features: [
+            { name: 'Sesiones de entrenamiento', value: 'Ilimitadas' },
+            { name: 'Plan nutricional', value: 'Premium + suplementación' },
+            { name: 'Coach asignado', value: '1:1 dedicado' },
+            { name: 'Seguimiento de progreso', value: 'Semanal' },
+            { name: 'Acceso a app', value: true },
+            { name: 'Ajustes de programa', value: 'Ilimitados' },
+            { name: 'Evaluación corporal', value: 'Quincenal' },
+            { name: 'Soporte por WhatsApp', value: '24/7 prioritario' },
+            { name: 'Comunidad VIP', value: true },
+            { name: 'Sesión de recuperación', value: '2/semana' },
+        ],
+        cta: 'Elegir Élite',
+    },
+];
+
+export const faqs = [
+    { question: '¿Puedo cambiar de plan después?', answer: 'Sí, puedes subir o bajar de plan en cualquier momento sin penalización. El cambio se aplica en tu próximo ciclo de facturación.' },
+    { question: '¿Hay contrato de permanencia?', answer: 'No. Sin contratos. Cancela cuando quieras. Creemos que debes quedarte porque quieres, no porque estés atado.' },
+    { question: '¿Qué pasa si viajo o me enfermo?', answer: 'Puedes pausar tu membresía hasta 30 días sin costo adicional. Tu progreso y tu plan se mantienen intactos.' },
+    { question: '¿Los precios incluyen nutrición?', answer: 'Sí, todos los planes incluyen guía nutricional según el nivel. El plan Starter incluye orientación básica, mientras que Pro y Élite incluyen planes personalizados.' },
+    { question: '¿Puedo probar antes de decidir?', answer: 'Por supuesto. Ofrecemos una sesión de evaluación gratuita y sin compromiso para que conozcas a tu coach y nuestras instalaciones.' },
+    { question: '¿Hay descuento para parejas o grupos?', answer: 'Sí, ofrecemos planes familiares con hasta 20% de descuento y planes corporativos personalizados. Contáctanos para más detalles.' },
+];
+
+export const stats = {
+    members: '2,500+',
+    transformations: '15,000+',
+    satisfaction: '98%',
+    coaches: '12',
+};
+
+export const nutritionPillars = [
+    {
+        title: 'Sin dietas extremas',
+        description: 'Planes flexibles basados en tus preferencias, no en restricciones imposibles. Come lo que te gusta, pero mejor.',
+        icon: '🚫',
+    },
+    {
+        title: 'Enfoque en hábitos',
+        description: 'Te enseñamos a comer bien de por vida, no solo durante el programa. Resultados que duran.',
+        icon: '🎯',
+    },
+    {
+        title: 'Basado en ciencia',
+        description: 'Macros calculados según tu metabolismo, actividad y objetivos reales. Sin adivinanzas.',
+        icon: '🔬',
+    },
+];
+
+export const nutritionIncludes = [
+    'Evaluación nutricional inicial (composición corporal + historial)',
+    'Plan de comidas semanal personalizado',
+    'Lista de compras organizada',
+    'Opciones de snacks y comidas fuera de casa',
+    'Ajustes quincenales con tu nutriólogo',
+    'Recetario con +50 recetas fáciles y rápidas',
+];
+
+export const coachStandards = [
+    { title: 'Certificación internacional', description: 'Certificación vigente de organismos reconocidos mundialmente', icon: '🏅' },
+    { title: 'Mínimo 3 años', description: 'Experiencia real con clientes y resultados comprobables', icon: '⏱️' },
+    { title: '80h formación/año', description: 'Formación continua obligatoria para mantenerse al día', icon: '📚' },
+    { title: 'Evaluaciones trimestrales', description: 'Medición de satisfacción de clientes cada trimestre', icon: '⭐' },
+];
+
+export const progressTimeline = [
+    { weeks: 'Semana 1-2', title: 'Adaptación', description: 'Evaluación inicial, ajuste de hábitos y aprendizaje de técnica correcta.' },
+    { weeks: 'Semana 3-4', title: 'Primeros cambios', description: 'Mejora notable en energía, calidad de sueño y estado de ánimo.' },
+    { weeks: 'Semana 5-8', title: 'Cambios visibles', description: 'Tu ropa se siente diferente. Los demás empiezan a notarlo.' },
+    { weeks: 'Semana 9-12', title: 'Resultados medibles', description: 'Cambios reales en composición corporal. Fuerza y resistencia mejoradas.' },
+    { weeks: 'Semana 13+', title: 'Estilo de vida', description: 'Hábitos consolidados. Ya no es un programa, es tu forma de vivir.' },
+];

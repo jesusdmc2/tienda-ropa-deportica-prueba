@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apex Performance Nutrition Guidance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6a00",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-button {
+            box-shadow: 0 0 20px rgba(255, 106, 0, 0.4);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #ff6a00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200 antialiased">
+<!-- Fixed Navbar -->
+<nav class="fixed top-0 w-full z-50 glass-card border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+<span class="material-icons text-white text-xl">bolt</span>
+</div>
+<span class="text-xl font-extrabold tracking-tighter dark:text-white">APEX <span class="text-primary">PERFORMANCE</span></span>
+</div>
+<div class="hidden md:flex items-center space-evenly gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">ENTRENAMIENTO</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary" href="#">NUTRICIÓN</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">COMUNIDAD</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">PLANES</a>
+</div>
+<button class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all glow-button">
+                    PRUEBA GRATIS
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-dark z-10"></div>
+<img alt="Healthy Food" class="w-full h-full object-cover opacity-30" data-alt="Dark aesthetic image of fresh healthy vegetables and salmon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6SmZ5eCl0fkrkmcPi6JZydSo-JfHY6SaHQWs2_U9Tk2OC0Sijc7g5KfsCDe3dRTRGutZ6bj6C2nnslILQZlfTBc6UxkbKuvhR5ACXbh8MaVaNjJ981thlp89uWvymuExcKpBbv66pfpZngnmcnx_24XfnbhCd0yXDq-GQcVOpDcAp4666PbLLsJlvPLQKqhhL6rSZ3DhWkk5Xi8fc8el9QrsWAbqdT0eslDa7bFrrgZzSPGRWTaBa-6W_V73gPo1W-ZgWcawi79uR"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<span class="inline-block py-1 px-4 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-6">Optimización Nutricional</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 dark:text-white">
+                ENTRENA DURO.<br/><span class="text-gradient">COME INTELIGENTE.</span>
+</h1>
+<p class="max-w-2xl mx-auto text-lg text-slate-400 mb-10">
+                Lleva tu rendimiento al siguiente nivel con planes nutricionales diseñados para la vida real. Resultados sin restricciones extremas, basados en ciencia y flexibilidad total.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all glow-button">
+                    EMPEZAR MI PLAN
+                </button>
+<button class="glass-card text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all">
+                    VER RESULTADOS
+                </button>
+</div>
+</div>
+</header>
+<!-- Nutrition Philosophy -->
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card p-8 rounded-2xl border-t-4 border-t-primary relative group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+<span class="material-icons text-primary text-3xl">restaurant_menu</span>
+</div>
+<h3 class="text-xl font-bold mb-4 dark:text-white">Sin dietas extremas</h3>
+<p class="text-slate-400 leading-relaxed">Olvídate de la restricción calórica severa. Nos enfocamos en el equilibrio y el disfrute de la comida para resultados sostenibles.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl border-t-4 border-t-primary relative group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+<span class="material-icons text-primary text-3xl">psychology</span>
+</div>
+<h3 class="text-xl font-bold mb-4 dark:text-white">Enfoque en hábitos</h3>
+<p class="text-slate-400 leading-relaxed">No solo te decimos qué comer, te enseñamos a tomar decisiones inteligentes que se adaptan a tu estilo de vida acelerado.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl border-t-4 border-t-primary relative group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6">
+<span class="material-icons text-primary text-3xl">science</span>
+</div>
+<h3 class="text-xl font-bold mb-4 dark:text-white">Basado en ciencia</h3>
+<p class="text-slate-400 leading-relaxed">Nuestras estrategias están validadas por la fisiología del ejercicio y la nutrición deportiva de élite para maximizar el rendimiento.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- What's Included -->
+<section class="py-20 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-extrabold mb-8 dark:text-white">TODO LO QUE NECESITAS PARA <span class="text-primary">TRIUNFAR</span></h2>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+<span class="material-icons text-white text-xs">check</span>
+</div>
+<div>
+<h4 class="font-bold dark:text-white">Evaluación Metabólica Inicial</h4>
+<p class="text-slate-400">Analizamos tu composición corporal y requerimientos energéticos específicos.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+<span class="material-icons text-white text-xs">check</span>
+</div>
+<div>
+<h4 class="font-bold dark:text-white">Planes de Alimentación Semanales</h4>
+<p class="text-slate-400">Personalizados al 100% según tus objetivos de ganancia muscular o pérdida de grasa.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+<span class="material-icons text-white text-xs">check</span>
+</div>
+<div>
+<h4 class="font-bold dark:text-white">Listas de Compras Inteligentes</h4>
+<p class="text-slate-400">Optimiza tu tiempo en el supermercado con guías precisas de lo que tu cuerpo necesita.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="flex-shrink-0 w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+<span class="material-icons text-white text-xs">check</span>
+</div>
+<div>
+<h4 class="font-bold dark:text-white">Recetario de Alto Rendimiento</h4>
+<p class="text-slate-400">Más de 100 recetas rápidas, nutritivas y diseñadas para el paladar gourmet.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+<img alt="Nutrition Planning" class="relative z-10 rounded-2xl shadow-2xl border border-white/10" data-alt="Modern kitchen setup with fresh ingredients and a tablet showing nutrition plan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQlsDSa68UbRujnX19DzBFnDIwNAHCce_xfmYCKt9kfPJlaKEbTqqOhSEvAA5T1M0SuSiibHgbz97cSTZtinu-yGyvyGX6Edrnm2WJGhnfLawn0bL7ze1vn5WnTXBC1bBU5eW-l71OADOfMjEjJNMBdfmZPeedWvHYEQNKkdpRaUdlmGEhWGIeGoDQbdJEuhNfilNa8ebLIuf9xkFbq5wk2U7MQ-juNmKwlV3Ez2zkvWhkHsPr4mmex8GED5Mo7UDXyrMI9s_fJ63g"/>
+</div>
+</div>
+</section>
+<!-- Sample Day Meal Plan -->
+<section class="py-20 bg-black/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="text-4xl font-extrabold dark:text-white mb-2 uppercase">Un día en Apex</h2>
+<p class="text-slate-400">Ejemplo de planificación para un atleta de alto rendimiento.</p>
+</div>
+<div class="bg-primary px-8 py-4 rounded-2xl text-center glow-button">
+<span class="block text-xs uppercase font-bold text-white/80">Total Diario</span>
+<span class="text-3xl font-extrabold text-white">1,910 kcal</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<!-- Desayuno -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<img alt="Breakfast" class="h-40 w-full object-cover" data-alt="Avocado toast with poached egg and nuts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs2uPDE_ALIyP2nq1P2-ueSKSHWpTB-52pguOWkMBE0BxFn328obQaEBHQeWqzohhkQcS262KHNG8jE14c4f294o_vuVGFEp6n-fnIUG_AksO1lWfGBbBJGE-WK-zltHNofTVMVjc8t1TOGX_Nm4cYCVTg7AkLD84iyhseMntv6VbkX_YObH5zyvArHHoHBxeFyVD7llvK1Q_6UaR0NGS-n230TFIt6X2uTPiDJPwoBbE_xp6Y33MLS_hnL-PHqp4URnyFwypmpgwc"/>
+<div class="p-6">
+<span class="text-primary text-xs font-bold uppercase mb-2 block">08:00 AM</span>
+<h4 class="text-lg font-bold dark:text-white mb-2">Desayuno Vital</h4>
+<p class="text-sm text-slate-400 mb-4 italic">Tostadas de masa madre con aguacate y huevo poché.</p>
+<span class="text-xs font-medium text-slate-300">450 kcal | 25g Prot</span>
+</div>
+</div>
+<!-- Media Mañana -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<img alt="Snack" class="h-40 w-full object-cover" data-alt="Greek yogurt bowl with berries and nuts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn8P0pVfX6WLqAKcBT8aY3NlwPrRnYecXzompHi7Bkz4MA8NC5NmFRtoComVE880r6lknzHydCPfpcpSAa3N-ZQf1JfUFOza1i7vLe0HEAUddKuPnq_ki9Nji04p0jD503nzth_WReAfgA6SsghWu8cC6CxCZbyam-NzVkoHgPa7o-niQlu8-5IWFmQ1BILTrmXzQegZCnyBqr29vpNIYPOWWlmgyEKK3v6CPGgFWQj446bsJy4mjrF9S93wY3XXKed2qFovn5VwiZ"/>
+<div class="p-6">
+<span class="text-primary text-xs font-bold uppercase mb-2 block">11:00 AM</span>
+<h4 class="text-lg font-bold dark:text-white mb-2">Snack Proteico</h4>
+<p class="text-sm text-slate-400 mb-4 italic">Yogur griego con frutos rojos y un puñado de nueces.</p>
+<span class="text-xs font-medium text-slate-300">220 kcal | 15g Prot</span>
+</div>
+</div>
+<!-- Almuerzo -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<img alt="Lunch" class="h-40 w-full object-cover" data-alt="Grilled chicken breast with quinoa and roasted vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRXLakKCVfgLCdf1DBANNld0GVxbN2eqRhkjYd-6i0fIZifRuAipGVrXcvjfKoQQWYB3cWbek8_WIAwB7kAQ_Qwru3JfP6E5mWx2sE3iRoSmZmRPdyqmvqYi5F2-qpQQyOTLrND9JvppwPpr4m8c0dptNNqLLLAemtp3dk69x_lw8nr3rJmd82zQS7I7cAufDeEt4AUsrD7bsy_xm8DynCGZMm6Kc7D1SwV5-lp7SM5xfQ_qjJkFyTTpDJ0VgII_OQ4hqqOgH4dsVT"/>
+<div class="p-6">
+<span class="text-primary text-xs font-bold uppercase mb-2 block">02:30 PM</span>
+<h4 class="text-lg font-bold dark:text-white mb-2">Almuerzo Power</h4>
+<p class="text-sm text-slate-400 mb-4 italic">Pechuga de pollo a la plancha, quinoa y vegetales asados.</p>
+<span class="text-xs font-medium text-slate-300|">640 kcal | 45g Prot</span>
+</div>
+</div>
+<!-- Merienda -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<img alt="Post-workout" class="h-40 w-full object-cover" data-alt="Fruit smoothie with protein powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwFZsLGau4PKcUJQVoxWMYv4joWUfwZwBLKqbG0nT1JdKmcFMWib-GN0oqjwxlIxT441Q1UNJY_jZC7oYM6KgEF23ypMoa51RjgCXoQVjyWF3wxSNLdpA6rYzAftqnSiQg2JESdrWrnCD49ODfzSEFZXXV1Oh4W8jZHstdEq-9sg4oYetAGL-1ATLsrnKnQS8jqqkinFYJh3HKkXqdRC_LKQ1LSgkJBdUFCsVagA-62S2PrtxDFd4tEu8v7D9kMOuW42otB_5cei2Q"/>
+<div class="p-6">
+<span class="text-primary text-xs font-bold uppercase mb-2 block">05:30 PM</span>
+<h4 class="text-lg font-bold dark:text-white mb-2">Batido Recover</h4>
+<p class="text-sm text-slate-400 mb-4 italic">Batido de proteína whey con plátano y leche de almendras.</p>
+<span class="text-xs font-medium text-slate-300">280 kcal | 28g Prot</span>
+</div>
+</div>
+<!-- Cena -->
+<div class="glass-card rounded-2xl overflow-hidden flex flex-col">
+<img alt="Dinner" class="h-40 w-full object-cover" data-alt="Grilled salmon with green asparagus and sweet potato" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN0-MbNlm_pB_JjDvYAn-XWa0-g3SOMAeqe7RO629piF52mLThBuSeUIVyR8qVG4kQFm84jSC_4u2XVk2Bl7ieZeFs1jE6xo1q7vwHBNjA3N3RXWlqOuS5UOak4AX9ouhaTW0qxtBaTdLgV5BI6CYwGNuw98f4Iwz4VGrlF9YNhq6s4w3UNPOmWq-SMWG0SPaEop3WYRePtVhFpYjptTRismvwvBZJt0FKbMfCj4S0r2ZhZJbFWSkvzAF-6pezQ1WZ4SEd2um9tl7z"/>
+<div class="p-6">
+<span class="text-primary text-xs font-bold uppercase mb-2 block">09:00 PM</span>
+<h4 class="text-lg font-bold dark:text-white mb-2">Cena Ligera</h4>
+<p class="text-sm text-slate-400 mb-4 italic">Salmón al horno con espárragos trigueros y boniato.</p>
+<span class="text-xs font-medium text-slate-300">320 kcal | 30g Prot</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Nutrition Testimonials -->
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-center text-3xl font-extrabold mb-16 dark:text-white uppercase tracking-tight">Voces de la comunidad</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="glass-card p-10 rounded-3xl relative">
+<span class="material-icons text-primary/40 text-6xl absolute top-6 right-8">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<img alt="Client" class="w-16 h-16 rounded-full object-cover border-2 border-primary" data-alt="Portrait of a fit woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbk02EbTpOD4EhgUiNAn8wrdu9oCJ5DGzt9OM_aHf4bnrqAkLWd1tx1jSpToW_dgW01nfb8Hc3bwU3uxsZ070CET3g8KipVqlEbxpJdmOFd8D-GXXs0nsTnoSL9Hz3ig2VhRm1n-bCPgks18nbnYFSjo-n4g2wLEd05bwYvLSEhw4PRExwp_ai6whk7OITcd3OZLu47MVglWRuZA1enYITFy3eb_jRmAlSptdOK9CbXIb3CnnEiEjjAlU_OiIodHzGE9cyrkBgR6Mc"/>
+<div>
+<h5 class="font-bold dark:text-white">Elena Martínez</h5>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Atleta de CrossFit</p>
+</div>
+</div>
+<p class="text-lg text-slate-300 italic leading-relaxed">
+                        "Pensé que comer sano significaba pasar hambre. Apex me enseñó que para rendir hay que comer, y comer bien. Mi recuperación ha mejorado un 200%."
+                    </p>
+</div>
+<div class="glass-card p-10 rounded-3xl relative">
+<span class="material-icons text-primary/40 text-6xl absolute top-6 right-8">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<img alt="Client" class="w-16 h-16 rounded-full object-cover border-2 border-primary" data-alt="Portrait of a muscular man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcSPS5nlSwr4hAXegTuueZ1DD6LxsrK86ENwNGA3d7IOK3lzEjH7b9dlVRRLseXRLWjI709WYdF6ABpf9LF_RiW3nKDuCmODnN-otJ6AEif2Khml4LI6aT5uxu3zDCqbLYXc7tRX4U9NlVC9wla-3yBFI9lWDAOU5zGghJAVF5o_Y9uJFrKFN_b2FFrDy19papBtzukv6aqwqq4MpnQQjGYopw4KoUiBXjxwavcjNaZoBTR35hkzuFc5n0RBo9ZfaurHHy8uUZO2XL"/>
+<div>
+<h5 class="font-bold dark:text-white">David Torres</h5>
+<p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Empresario &amp; Runner</p>
+</div>
+</div>
+<p class="text-lg text-slate-300 italic leading-relaxed">
+                        "La flexibilidad del plan es clave. Como alguien que viaja mucho, las guías de intercambio y el enfoque en hábitos me salvaron la vida."
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5"></div>
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<h2 class="text-4xl md:text-5xl font-extrabold mb-8 dark:text-white uppercase leading-tight">
+                Tu transformación comienza <br/><span class="text-primary">en la cocina</span>
+</h2>
+<p class="text-xl text-slate-400 mb-12">
+                Deja de adivinar y empieza a ver resultados reales. Estamos listos para diseñar tu estrategia ganadora.
+            </p>
+<button class="bg-primary hover:bg-orange-600 text-white px-10 py-5 rounded-xl font-extrabold text-xl transition-all glow-button flex items-center gap-3 mx-auto">
+                SOLICITA TU PLAN NUTRICIONAL <span class="material-icons">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-black py-16 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+<span class="material-icons text-white text-xl">bolt</span>
+</div>
+<span class="text-xl font-extrabold tracking-tighter text-white">APEX <span class="text-primary">PERFORMANCE</span></span>
+</div>
+<p class="text-slate-500 max-w-sm">
+                        Elevando los estándares del fitness y la nutrición deportiva para atletas comprometidos con la excelencia.
+                    </p>
+</div>
+<div>
+<h5 class="font-bold text-white mb-6 uppercase tracking-widest text-sm">Empresa</h5>
+<ul class="space-y-4 text-slate-500 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Sobre Nosotros</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Programas</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contacto</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog de Salud</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-6 uppercase tracking-widest text-sm">Redes Sociales</h5>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+<i class="material-icons text-lg">facebook</i>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+<i class="material-icons text-lg">camera_alt</i>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all text-white" href="#">
+<i class="material-icons text-lg">play_arrow</i>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-600 text-xs">© 2024 Apex Performance Nutrition. Todos los derechos reservados.</p>
+<div class="flex gap-6 text-xs text-slate-600">
+<a class="hover:text-slate-400" href="#">Términos y Condiciones</a>
+<a class="hover:text-slate-400" href="#">Privacidad</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

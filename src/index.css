@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff6a00;
+  --color-background-dark: #0A0A0A;
+  --color-surface-dark: #1A1A1A;
+  --font-display: "Lexend", "Inter", sans-serif;
+}
+
+/* Tailwind v4 Preflight handles base resets (box-sizing, margin, padding).
+   DO NOT add an unlayered * reset — it overrides @layer utilities. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: var(--color-background-dark);
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ── Glass Card (matches Stitch: dark semi-opaque + blur + orange border) ── */
+.glass-card {
+  background: rgba(22, 22, 22, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 106, 0, 0.1);
+}
+
+/* ── Glass (Home page: lighter, more transparent) ── */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ── Hero gradient overlay ── */
+.hero-gradient {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 1) 100%);
+}
+
+/* ── Orange glow button ── */
+.glow-button {
+  box-shadow: 0 0 25px rgba(255, 106, 0, 0.4);
+}
+
+/* ── Orange glow text ── */
+.glow-text {
+  text-shadow: 0 0 20px rgba(255, 106, 0, 0.5);
+}
+
+/* ── Orange glow on hover ── */
+.orange-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 106, 0, 0.4);
+}
+
+/* ── Header underline ── */
+.header-underline {
+  height: 4px;
+  background: linear-gradient(90deg, #ff6a00 0%, transparent 100%);
+}
+
+/* ── Timeline vertical line ── */
+.timeline-gradient {
+  background: linear-gradient(to bottom, #ff6a00 0%, #ff6a00 100%);
+}
+
+/* ── Coach image bottom gradient ── */
+.coach-img-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(10, 10, 10, 0.8), transparent);
+  pointer-events: none;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 106, 0, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
