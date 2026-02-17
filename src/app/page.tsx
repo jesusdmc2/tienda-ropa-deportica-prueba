@@ -1,14 +1,17 @@
 import Link from 'next/link';
 
+const WELCOME_IMAGE_URL = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCukASVLnNNBNyMaIoxcxKOYUfEh5xel8BEb8Xkiw8CfDB7D2zrR6Y7o5pgOkY3q1g-nFLSuQiLT45TDPWzUMUZpSokXomiDM9k1aO_AuiBnJuoLo0keKQQ6LIGNZ8bL7CKoavk4JA_KRRXD2KMHRRi3XcExDwPzEnWZIY69lDDkc1U1SOBSSpn30-O4tkyrhg_w4xxQ7gAFEfcFXf-5Tk40TPkcr1Y5QLsaQFauB46KdCly0Uwdk3OZq5jBXCTpv-zPLzH53eA5lmJ';
+const WELCOME_BACKGROUND_STYLE = {
+  backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(34, 25, 16, 1)), url("${WELCOME_IMAGE_URL}")`,
+};
+
 export default function WelcomePage() {
   return (
     <div className="relative flex h-screen w-full flex-col overflow-hidden group/design-root bg-background-dark">
       <div className="absolute inset-0 z-0">
         <div
           className="w-full h-full bg-center bg-no-repeat bg-cover scale-110"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(34, 25, 16, 1)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCukASVLnNNBNyMaIoxcxKOYUfEh5xel8BEb8Xkiw8CfDB7D2zrR6Y7o5pgOkY3q1g-nFLSuQiLT45TDPWzUMUZpSokXomiDM9k1aO_AuiBnJuoLo0keKQQ6LIGNZ8bL7CKoavk4JA_KRRXD2KMHRRi3XcExDwPzEnWZIY69lDDkc1U1SOBSSpn30-O4tkyrhg_w4xxQ7gAFEfcFXf-5Tk40TPkcr1Y5QLsaQFauB46KdCly0Uwdk3OZq5jBXCTpv-zPLzH53eA5lmJ")`
-          }}
+          style={WELCOME_BACKGROUND_STYLE}
         ></div>
       </div>
 
