@@ -16,6 +16,10 @@
   --font-lexend: var(--font-lexend);
   --font-jakarta: var(--font-plus-jakarta-sans);
   --font-noto: var(--font-noto-sans);
+
+  /* Semantic mappings */
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-lexend);
 }
 
 /* Custom Utilities based on design */
