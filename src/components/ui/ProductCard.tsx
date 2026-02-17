@@ -33,6 +33,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           style={{ backgroundImage: `url("${image}")` }}
         />
         <button
+          aria-label="Add to cart"
           className="absolute bottom-2 right-2 bg-white text-black rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:bg-gray-100 active:scale-95"
           onClick={(e) => {
             e.stopPropagation();
