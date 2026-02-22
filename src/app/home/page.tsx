@@ -5,6 +5,11 @@ import { BottomNav } from '@/components/ui/BottomNav';
 import { CategoryCard } from '@/components/ui/CategoryCard';
 import { ProductCard } from '@/components/ui/ProductCard';
 
+const HERO_IMAGE_URL = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDjLFgzXF0hzyfNra7oADwXQJvTPTZKpiQGJUSA9kwKZ2B1gaRY7rJgwrHb4aulRkPUBmwoPjRQFhFIQCGwYYjj8S0MzXYnATxOEICd_4L5-cB4I229a7NI7JCxoCp5DEfG_8-lokTm4unXV6JY_f21ijZ5cIGuIp9IqenxplakcutuKgP5DzJrx2XT0okCj7kYcZ7Z0X2x8DqVJamX9z51DnGiq2-hG7I2G0EF7sd1BjUwkpHUk6noKUB8UXSif-75fFq_8UYQoYg5';
+const HERO_BACKGROUND_STYLE = {
+  backgroundImage: `linear-gradient(to top, rgba(24, 20, 17, 1) 0%, rgba(24, 20, 17, 0.4) 40%, rgba(0, 0, 0, 0.1) 100%), url("${HERO_IMAGE_URL}")`,
+};
+
 export default function HomePage() {
   const navItems = [
     { icon: 'home', label: 'Inicio', href: '/home', active: true, filled: true },
@@ -28,7 +33,7 @@ export default function HomePage() {
         <div className="@[480px]:p-4">
           <div
             className="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-end p-6 pb-12 relative"
-            style={{ backgroundImage: `linear-gradient(to top, rgba(24, 20, 17, 1) 0%, rgba(24, 20, 17, 0.4) 40%, rgba(0, 0, 0, 0.1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjLFgzXF0hzyfNra7oADwXQJvTPTZKpiQGJUSA9kwKZ2B1gaRY7rJgwrHb4aulRkPUBmwoPjRQFhFIQCGwYYjj8S0MzXYnATxOEICd_4L5-cB4I229a7NI7JCxoCp5DEfG_8-lokTm4unXV6JY_f21ijZ5cIGuIp9IqenxplakcutuKgP5DzJrx2XT0okCj7kYcZ7Z0X2x8DqVJamX9z51DnGiq2-hG7I2G0EF7sd1BjUwkpHUk6noKUB8UXSif-75fFq_8UYQoYg5")` }}
+            style={HERO_BACKGROUND_STYLE}
           >
             <div className="flex flex-col gap-3 text-center z-10">
               <h1 className="text-white text-5xl font-black leading-[0.9] tracking-[-0.033em] uppercase italic drop-shadow-lg font-display">
