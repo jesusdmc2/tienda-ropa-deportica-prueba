@@ -1,28 +1,66 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #f48c25;
-  --color-primary-light: #f27f0d;
-  --color-accent: #0df246;
-  --color-neon-green: #ccff00;
+  --color-primary: #ff6a00;
+  --color-primary-light: #ff8533;
   --color-background-light: #f8f7f5;
-  --color-background-dark: #181411;
-  --color-background-darker: #221910;
-  --color-surface-dark: #27211b;
-  --color-surface-light: #ffffff;
-  --color-card-dark: #27211b;
+  --color-background-dark: #0A0A0A;
+  --color-surface-dark: #1A1A1A;
+  --color-card-dark: #161616;
 
-  --font-space: var(--font-space-grotesk);
-  --font-lexend: var(--font-lexend);
+  --font-inter: var(--font-inter);
   --font-jakarta: var(--font-plus-jakarta-sans);
   --font-noto: var(--font-noto-sans);
 
-  /* Semantic mappings */
-  --font-display: var(--font-space-grotesk);
-  --font-body: var(--font-lexend);
+  /* Semantic mappings - Using Inter for that aggressive, bold aesthetic */
+  --font-display: var(--font-inter);
+  --font-body: var(--font-inter);
 }
 
-/* Custom Utilities based on design */
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@utility glow-button {
+  box-shadow: 0 0 20px rgba(255, 106, 0, 0.4);
+}
+
+@utility orange-glow {
+  box-shadow: 0 0 20px rgba(255, 106, 0, 0.4);
+}
+
+@utility glow-text {
+  text-shadow: 0 0 20px rgba(255, 106, 0, 0.5);
+}
+
+@utility text-gradient {
+  background: linear-gradient(to right, #ffffff, #a1a1a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility text-gradient-primary {
+  background: linear-gradient(to right, #ffffff, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility hero-gradient {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.4) 0%, rgba(10, 10, 10, 1) 100%);
+}
+
+@utility timeline-gradient {
+  background: linear-gradient(to bottom, #ff6a00 0%, #ff6a00 100%);
+}
+
 @utility text-shadow {
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }

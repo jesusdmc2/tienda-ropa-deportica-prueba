@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Lexend, Plus_Jakarta_Sans, Noto_Sans } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Noto_Sans } from "next/font/google";
 import "./globals.css";
+import { GlobalNavbar } from "@/components/ui/GlobalNavbar";
+import { GlobalFooter } from "@/components/ui/GlobalFooter";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   display: 'swap',
-});
-
-const lexend = Lexend({
-  variable: "--font-lexend",
-  subsets: ["latin"],
-  display: 'swap',
+  style: ['normal', 'italic'],
 });
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -37,14 +34,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark">
+    <html lang="es" className="dark scroll-smooth">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${lexend.variable} ${plusJakartaSans.variable} ${notoSans.variable} antialiased bg-background-light dark:bg-background-dark text-slate-900 dark:text-white`}
+        className={`${inter.variable} ${plusJakartaSans.variable} ${notoSans.variable} antialiased bg-background-light dark:bg-background-dark text-slate-900 dark:text-white relative font-display min-h-screen flex flex-col`}
       >
-        {children}
+        <GlobalNavbar />
+        <main className="flex-1">
+          {children}
+        </main>
+        <GlobalFooter />
       </body>
     </html>
   );
