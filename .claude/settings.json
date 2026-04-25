@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "mcpServers": {
+    "tavily": {
+      "command": "npx",
+      "args": ["-y", "tavily-mcp@0.3.1"],
+      "env": {
+        "TAVILY_API_KEY": "TU_API_KEY_AQUI"
+      }
+    }
+  }
+}
