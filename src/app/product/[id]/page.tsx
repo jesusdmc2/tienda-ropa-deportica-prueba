@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
@@ -11,7 +11,7 @@ export default function ProductPage() {
   // Mock data based on ID
   const isGreen = id === '2';
 
-  const product = {
+  const product = useMemo(() => ({
     title: "Apex Speed Pro",
     price: isGreen ? "$189.99" : "$129.99",
     rating: "4.8 (124 reseñas)",
@@ -32,7 +32,7 @@ export default function ProductPage() {
       { icon: "bubble_chart", title: "Espuma Reactiva", desc: "Tecnología de amortiguación para un retorno de energía explosivo." },
       { icon: "fitbit_treadmill", title: "Suela de Agarre", desc: "Patrón de tracción optimizado para superficies de alta velocidad." },
     ]
-  };
+  }), [isGreen]);
 
   const primaryColor = isGreen ? 'text-[#0df246]' : 'text-[#f48c25]';
   const primaryBg = isGreen ? 'bg-[#0df246]' : 'bg-[#f48c25]';
